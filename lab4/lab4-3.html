@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title> Lyonina Xenia 4.3</title>
+    </head>
+    <body>
+     <script>
+        "use strict";
+                    let mas=[];
+                    for(let i=0;i<20;i++){
+                        mas[i]=Math.floor(Math.random()*50)-20;
+                    }
+                    document.write("Массив чисел: <br \/>" , mas.join());
+
+                    let s=1;
+                    for(let i=4;i<7;i++){
+                        s=s*mas[i];
+                    }
+                    document.write("<br \/> <br \/> Среднее арифметическое чисел =  <br \/> " , s);
+                    
+                    let k=0;
+                    for(let i=1;i<20;i++){
+                        if((i%4)==0 & mas[i]>0){
+                            k++;
+                        }
+                    }
+
+                    document.write("<br \/> <br \/> Количество положительных чисел, стоящих на местах, кратных 4:  <br \/> " , k);
+
+                    
+
+     </script>
+    </body>
+ </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title> Lyonina Xenia 4.2 </title>
+    </head>
+    <body>
+     <script>
+       "use strict";
+                    let mas=[];
+                    for(let i=0;i<20;i++){
+                        mas[i]=Math.floor(Math.random()*40);
+                    }
+                    document.write("Массив чисел: <br \/>" , mas.join());
+                    let m = Math.max.apply(null, mas);
+                    document.write("<br \/> Максимальный элемент в массиве: " , m);
+                    let a=mas.indexOf(m);
+                    document.write("<br \/> <br \/> Индекс максимального элемента: " , a);
+                    let temp =mas[18];
+                    mas[18]=mas[a];
+                    mas[a]=temp;
+
+                    document.write("<br \/> <br \/> Изменённый массив <br \/> " , mas.join());
+     </script>
+    </body>
+ </html>

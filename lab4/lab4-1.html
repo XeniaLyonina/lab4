@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Lyonina Xenia 4.1</title>
+    </head>
+    <body>
+     <script>
+       "use strict";
+
+let treug=[1,2,3,4,5,6,7,8,9,10];
+treug.forEach((element,index,array)=>{
+    treug.splice(index,1,(element*(element+1)/2))
+    
+});
+document.write("Задание 1.1 <br \/>" , treug.join());
+let kvd=[1,2,3,4,5,6,7,8,9,10];
+kvd.forEach((element,index,array)=>{
+    kvd.splice(index,1,element*element)
+});
+document.write("<br \/>Задание 1.2 <br \/>" , kvd.join());
+let rez=treug.concat(kvd);
+document.write("<br \/>Задание 1.3 <br \/>" , rez.join());
+rez.reverse();
+document.write("<br \/>Задание 1.4 <br \/>" , rez.join());
+     </script>
+    </body>
+ </html>

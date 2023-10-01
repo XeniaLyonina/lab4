@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Lyonina Xenia 4.4</title>
+                <style>
+                </style>
+        </head>
+            <body>
+                <script>
+                    "use strict";
+                    let fruits=['apple','pineapple','mango','melon','grape'];
+                    let citrus=['orange','lemon','lime'];
+
+                    document.write("Массив fruits: <br \/>" , fruits.join());
+                    document.write("<br \/><br \/>Массив citrus: <br \/>" , citrus.join());
+
+                    fruits = fruits.concat(citrus);
+                    document.write("<br \/><br \/> Объеденённый массив fruits и citrus: <br \/>" , fruits.join());
+
+                    fruits.splice(3,0,'pear','cherry','plum','raspberry','strawberry');
+
+                    document.write("<br \/><br \/> Новый массив fruits: <br \/>" , fruits);
+
+                    fruits.splice(10,3);
+                    document.write("<br \/><br \/> Массив fruits с удалёнными 3-мя последними элементами: <br \/>" , fruits);
+
+                    fruits.sort();
+                    document.write("<br \/><br \/> Отсортированный массив fruits: <br \/>" , fruits);
+
+                    fruits.reverse();
+                    document.write("<br \/><br \/> Массив fruits в обратном порядке по алфовиту: <br \/>" , fruits);
+
+                    fruits.sort((a, b) => b.length - a.length);
+                    document.write("<br \/><br \/> Массив fruits отсортированный по длине слов: <br \/>" , fruits);
+                </script>
+            </body>
+    </html>
